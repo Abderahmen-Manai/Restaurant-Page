@@ -1,5 +1,6 @@
 import "./style/reset.css";
 import "./style/style.css";
+import "./images/noodle.png"
 
 import { generateHome } from "./Modules/homepage";
 import { generateMenu } from "./Modules/MenuPage";
