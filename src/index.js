@@ -1,10 +1,22 @@
 import "./style/reset.css";
 import "./style/style.css";
-import "./images/noodle.png";
+import noodle from "./images/noodle.png";
 
 import { generateHome } from "./Modules/homepage";
 import { generateMenu } from "./Modules/MenuPage";
 import { generateContact } from "./Modules/ContactPage";
+
+// Get the logo-container element
+const LogoContainer = document.querySelector(".logo-container");
+
+// Create an image element
+const logoImg = document.createElement("img");
+
+// Set the src attribute of the image to the noodle variable
+logoImg.src = noodle;
+
+// Append the image to the logo-container element
+LogoContainer.appendChild(logoImg);
 
 const container = document.querySelector(".container");
 const menu = document.querySelector("#menu");
